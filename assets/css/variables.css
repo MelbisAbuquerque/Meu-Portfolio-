@@ -1,0 +1,26 @@
+:root {
+
+    /* Cores */
+ 
+    --primary:#2563EB;
+    --secondary:#1E293B;
+    --background:#0F172A;
+    --surface:#1E293B;
+    --text:#F8FAFC;
+    --text-secondary:#94A3B8;
+    --success:#22C55E;
+
+
+    --border: rgba(255,255,255,.08);
+
+    /* Fontes */
+    --font: "Poppins", sans-serif;
+
+    /* Espaçamentos */
+    --radius: 16px;
+    --transition: .3s ease;
+
+    /* Largura máxima */
+    --container: 1200px;
+
+}

@@ -1,0 +1,31 @@
+
+.container-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 400px 200px;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape";
+
+}
+
+header,  main, footer{
+    background-color: #f2f2f2;
+    border: 2px solid red;
+}
+
+header{grid-area:cabecalho;}
+main{grid-area:conteudo;}
+footer{grid-area:rodape;}
+
+.main-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
+    grid-template-areas:
+        "hero"
+
+}
+
+#hero{grid-area:hero;}
