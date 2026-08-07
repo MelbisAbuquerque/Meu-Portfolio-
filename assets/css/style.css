@@ -2,7 +2,7 @@
 .container-grid{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 400px 200px;
+    grid-template-rows:auto auto auto;
     grid-template-areas:
         "cabecalho"
         "conteudo"
@@ -11,8 +11,8 @@
 }
 
 header,  main, footer{
-    background-color: #f2f2f2;
-    border: 2px solid red;
+    background-color: var(--secondary);
+
 }
 
 header{grid-area:cabecalho;}
@@ -22,10 +22,14 @@ footer{grid-area:rodape;}
 .main-grid{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px;
+    grid-template-rows: auto 200px auto;
+    gap:15px;
     grid-template-areas:
         "hero"
-
+        "sobre"
+        "contato"
 }
 
 #hero{grid-area:hero;}
+#sobre{grid-area:sobre;}
+#contato{grid-area:contato;}

@@ -1,0 +1,84 @@
+
+.sobre-texto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    background-color: var(--background);
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 8px; 
+}
+
+.sobre-content{
+    display: flex;
+    flex-direction: column; 
+}
+
+.section-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color:var(--text);
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.sobre-content p{
+    margin: 0;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.section-title span{
+    display:flex;
+    background-color: var(--primary);
+    font-size: 2.5rem;
+    border-radius:5px;
+    color:var(--text);
+}
+
+.sobre-informacoes{
+    display: flex;
+    flex-direction:rowm;
+    gap: 10px;
+}
+
+.sobre-informacoes p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.sobre-informacoes span{
+    display:flex;
+    background-color: var(--primary);
+    font-size: 1.8rem;
+    border:1px solid var(--border);
+    border-radius:5px;
+    color:black;
+}
+
+.informacoes-contato{
+    display: flex;
+    flex-direction:column;
+}
+
+label{
+    font-weight: bold;
+}
+
+.nome, .idade, .email, .telefone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.localizacao, .formacao{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}

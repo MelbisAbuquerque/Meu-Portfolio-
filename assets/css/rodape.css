@@ -1,0 +1,10 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape h3{
+    margin:10px;
+    font-size: 0.7rem;
+    color:var(--text-secondary);
+}
