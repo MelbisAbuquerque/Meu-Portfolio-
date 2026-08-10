@@ -1,43 +1,206 @@
-#contato{
-    background:var(--secondary);
+/* ================================
+   CONTATO
+================================ */
+
+#contato {
+    background: var(--secondary);
 }
 
-.contato-card{
+
+/* CARD PRINCIPAL */
+
+.contato-card {
     display: flex;
-    gap:30px;
+    gap: 50px;
+
+    padding: 40px;
+    margin: 0 20px;
+
     background-color: var(--background);
     color: var(--text-color);
+
+    border-radius: 8px;
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 0px 20px;
-    border-radius: 8px; 
 }
 
-.contato h2{
-    font-size:1rem;
-    color:var(--text);
+
+/* TÍTULO */
+
+.contato h2 {
+    font-size: 1.5rem;
+    color: var(--text);
 }
 
-.contato p{
-    font-size:0,3rem;
-    color:var(--text-secondary);
+
+/* TEXTO */
+
+.contato p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }
 
-.btn-contato
-{
+
+/* BOTÃO */
+
+.btn-contato {
     background-color: var(--secondary);
     color: var(--text);
-    border: 2px solid var(--primary);
-}
 
-.btn-contato:hover{
-    background-color: var(--primary-hover);
+    border: 2px solid var(--primary);
+
     transition: 0.3s;
 
+    cursor: pointer;
 }
 
-.informacao-contato{
+.btn-contato:hover {
+    background-color: var(--primary-hover);
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   INFORMAÇÕES DE CONTATO
+================================ */
+
+.informacao-contato {
     display: flex;
     align-items: center;
-    gap:40px;
+
+    gap: 40px;
+}
+
+
+/* CARD DE CONTATO */
+
+.card-contato {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* TEXTO + ÍCONE */
+
+.text-contato {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--text);
+}
+
+.text-contato i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao {
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: var(--text-secondary);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .contato-card {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .informacao-contato {
+        display:flex ;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card-contato {
+        width: 100%;
+    }
+
+    .contato h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn-contato{
+
+    }
+
+    .descricao {
+        display: flex;
+        align-content: flex-start;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ================================
+   CELULAR
+================================ */
+
+@media (max-width: 480px) {
+
+    .contato-card {
+        gap: 25px;
+
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+
+    .contato h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contato p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .informacao-contato {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .card-contato {
+        width:100%;
+    }
+
+    .text-contato {
+        gap: 8px;
+    }
+
+    .text-contato i {
+        font-size: 1.3rem;
+    }
+
+    .descricao {
+        font-size: 0.8rem;
+    }
+
+    .btn-contato {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
 }

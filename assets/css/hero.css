@@ -110,3 +110,97 @@
 }
 
 }
+
+@media (max-width: 768px) {
+
+    #hero {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "hero-content"
+            "hero-image";
+
+        min-height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+        margin: 0;
+    }
+
+    #cargo {
+        font-size: 0.95rem;
+    }
+
+    #hero h2 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    #descricao {
+        font-size: 0.95rem;
+        max-width: 600px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-contato,
+    .btn-projetos {
+        width: 180px;
+        height: 48px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 65%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #hero {
+        padding: 40px 15px;
+    }
+
+    #hero h2 {
+        font-size: 1.9rem;
+    }
+
+    #cargo {
+        font-size: 0.85rem;
+    }
+
+    #descricao {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-contato,
+    .btn-projetos {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .hero-image img {
+        width: 75%;
+        max-width: 280px;
+    }
+}

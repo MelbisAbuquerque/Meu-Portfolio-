@@ -75,7 +75,7 @@
 .nav-list a.active{
 
     color:#7c5cff;
-
+    border-bottom:2px solid #7c5cff;
 }
 
 .header-actions{
