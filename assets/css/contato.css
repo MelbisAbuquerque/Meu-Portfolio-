@@ -11,7 +11,7 @@
 
 .contato-card {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 
     padding: 40px;
     margin: 0 20px;
@@ -23,7 +23,6 @@
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 /* TÍTULO */
 
@@ -44,15 +43,21 @@
 /* BOTÃO */
 
 .btn-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.8rem;
     background-color: var(--secondary);
     color: var(--text);
-
     border: 2px solid var(--primary);
 
     transition: 0.3s;
 
     cursor: pointer;
+
+    margin-top:1px;
 }
+
 
 .btn-contato:hover {
     background-color: var(--primary-hover);
@@ -67,19 +72,19 @@
 
 .informacao-contato {
     display: flex;
-    align-items: center;
-
-    gap: 40px;
+    align-items:center;
+    gap: 20px;
 }
 
 
-/* CARD DE CONTATO */
+/* CARD  DE CONTATO */
 
 .card-contato {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -88,14 +93,12 @@
 .text-contato {
     display: flex;
     align-items: center;
-
     gap: 10px;
-
     color: var(--text);
 }
 
 .text-contato i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--primary);
 }
 
@@ -103,9 +106,8 @@
 /* DESCRIÇÃO */
 
 .descricao {
+    display: flex;
     font-size: 0.9rem;
-    line-height: 1.5;
-
     text-align: center;
 
     color: var(--text-secondary);
@@ -131,8 +133,9 @@
         gap: 10px;
     }
 
-    .card-contato {
+    .card-contato{
         width: 100%;
+
     }
 
     .contato h2 {
@@ -140,7 +143,9 @@
     }
 
     .btn-contato{
-
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
     .descricao {
@@ -172,17 +177,15 @@
     .contato p {
         font-size: 0.85rem;
         text-align: center;
-    }
+    }  
 
     .informacao-contato {
-        flex-direction: column;
-
-        align-items: flex-start;
-
+        flex-direction:column;
         gap: 15px;
     }
 
     .card-contato {
+        
         width:100%;
     }
 
@@ -196,11 +199,7 @@
 
     .descricao {
         font-size: 0.8rem;
+        flex-wrap: wrap
     }
 
-    .btn-contato {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-    }
 }
