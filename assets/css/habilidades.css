@@ -337,6 +337,11 @@
         margin: 10px;
     }
 
+    .box {
+    min-height: 250px;
+  
+    }
+
 
     /* HABILIDADES */
 

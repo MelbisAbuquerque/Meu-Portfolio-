@@ -168,9 +168,13 @@
         padding: 20px 15px;
         margin: 0 10px;
     }
-
+    
+    .contato{
+        width:200px;
+    }
+    
     .contato h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -185,8 +189,11 @@
     }
 
     .card-contato {
-        
         width:100%;
+    }
+
+    .btn-contato span {
+        margin-left:10px;
     }
 
     .text-contato {
